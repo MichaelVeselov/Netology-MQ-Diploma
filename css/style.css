@@ -108,7 +108,7 @@ button {
 /* ===============PAGE===============*/
 
 .page {
-    max-width: 1660px;
+    /* max-width: 1660px; */
     min-width: 240px;
     position: relative;
     margin-left: auto;
@@ -173,8 +173,8 @@ button {
 .intro {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 523px;
+    min-height: 523px;
+    padding-top: 170px;
     background: #b2b2b2 url('../img/banner-bg.jpg') center no-repeat;
     background-size: cover;
     position: relative;
@@ -205,7 +205,6 @@ button {
     font-size: 45px;
     font-weight: 700;
     line-height: 1.4;
-    margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -218,6 +217,9 @@ button {
 .actual-trends {
     margin-top: 65px;
     width: 100%;
+    max-width: 1660px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .actual-trends-title {
@@ -920,15 +922,15 @@ button {
     }
 
     .intro {
-        height: 395px;
+        min-height: 395px;
         background: #b2b2b2 url('../img/banner-bg-tablet.jpg') center no-repeat;
         background-size: cover;
+        padding-top: 170px;
     }
 
     .intro-inner {
         margin-left: auto;
         margin-right: auto;
-        margin-top: 110px;
     }
 
     .intro-title {
@@ -1049,15 +1051,15 @@ button {
     }
 
     .intro {
-        height: 635px;
+        min-height: 635px;
         background: #b2b2b2 url('../img/banner-mobile.jpg') no-repeat center;
         background-size: cover;
+        padding-top: 320px;
     }
 
     .intro-inner {
         margin-left: auto;
         margin-right: auto;
-        margin-top: 160px;
     }
 
     .intro-title {
