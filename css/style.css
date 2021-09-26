@@ -23,6 +23,11 @@ body {
     -moz-appearance: none;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 ul,
 ol {
     list-style-type: none;
@@ -175,6 +180,7 @@ button {
     flex-direction: column;
     min-height: 523px;
     padding-top: 170px;
+    padding-bottom: 20px;
     background: #b2b2b2 url('../img/banner-bg.jpg') center no-repeat;
     background-size: cover;
     position: relative;
@@ -853,7 +859,14 @@ button {
     background-color: #323232;
 }
 
+/* ===============Media 1199px===============*/
+
 @media (max-width: 1199px) {
+    /* html,
+    body {
+        overflow-x: hidden;
+    } */
+
     .container {
         padding: 0 35px;
     }
@@ -925,7 +938,6 @@ button {
         min-height: 395px;
         background: #b2b2b2 url('../img/banner-bg-tablet.jpg') center no-repeat;
         background-size: cover;
-        padding-top: 170px;
     }
 
     .intro-inner {
@@ -1033,8 +1045,14 @@ button {
         width: 50%;
     }
 }
+/* ===============Media 640px===============*/
 
 @media (max-width: 640px) {
+    /* html,
+    body {
+        overflow-x: hidden;
+    } */
+
     .container {
         padding: 0 15px;
     }
