@@ -124,46 +124,42 @@
         <!-- HEADER -->
         <header class="header">
             <div class="container">
-                <div class="header-inner">
-                    <div class="header-logo">
-                        <a href="/">
-                            <img
-                                src="svg/noemi-logo.svg"
-                                alt="Logo"
-                                class="logo-img"
-                                width="180"
-                            />
-                        </a>
+                <div class="header-wrapper">
+                    <div class="header-logo-nav">
+                        <div class="header-logo">
+                            <a href="/">
+                                <img
+                                    src="svg/noemi-logo.svg"
+                                    alt="Logo"
+                                    class="logo-img"
+                                    width="180"
+                                />
+                            </a>
+                        </div>
+                        <nav class="header-nav">
+                            <ul class="header-nav-items">
+                                <li><a href="#0">Главная</a></li>
+                                <li><a href="#0">Посты</a></li>
+                                <li><a href="#0">Статьи</a></li>
+                                <li><a href="#0">Теги</a></li>
+                                <li><a href="#0">Темы</a></li>
+                                <li><a href="#0">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header-hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
-                    <nav class="nav">
-                        <ul class="nav-items">
-                            <li><a href="#0">Главная</a></li>
-                            <li><a href="#0">Посты</a></li>
-                            <li><a href="#0">Статьи</a></li>
-                            <li><a href="#0">Теги</a></li>
-                            <li><a href="#0">Темы</a></li>
-                            <li><a href="#0">Контакты</a></li>
-                        </ul>
-                    </nav>
-                    <div class="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <div class="header-intro">
+                        <h1 class="header-intro-title">
+                            блог о творчестве, спорте, и образе жизни
+                        </h1>
                     </div>
                 </div>
             </div>
         </header>
-        <!-- INTRO -->
-        <section class="intro">
-            <div class="container">
-                <div class="intro-inner">
-                    <h1 class="intro-title">
-                        блог о творчестве, спорте, и образе жизни
-                    </h1>
-                </div>
-            </div>
-        </section>
-        <!-- ACTUAL TRENDS -->
         <section class="actual-trends">
             <h2 class="underlined-title actual-trends-title">
                 Сейчас в тренде
@@ -856,9 +852,9 @@
         </section>
         <!-- <script type="text/javascript"> -->
         <script>
-            const menu = document.querySelector('.nav-items'),
-                menuItem = document.querySelectorAll('.nav-items > li'),
-                hamburger = document.querySelector('.hamburger');
+            const menu = document.querySelector('.header-nav-items'),
+                menuItem = document.querySelectorAll('.header-nav-items > li'),
+                hamburger = document.querySelector('.header-hamburger');
 
             var close = document.getElementById('close');
             var modal = document.getElementById('modal');
@@ -869,14 +865,14 @@
             });
 
             hamburger.addEventListener('click', () => {
-                hamburger.classList.toggle('hamburger-active');
-                menu.classList.toggle('nav-items-active');
+                hamburger.classList.toggle('header-hamburger-active');
+                menu.classList.toggle('header-nav-items-active');
             });
 
             menuItem.forEach((item) => {
                 item.addEventListener('click', () => {
-                    hamburger.classList.toggle('hamburger-active');
-                    menu.classList.toggle('nav-items-active');
+                    hamburger.classList.toggle('header-hamburger-active');
+                    menu.classList.toggle('header-nav-items-active');
                 });
             });
         </script>
